@@ -117,6 +117,7 @@ body
         padding:0px 15px 10px 15px;
         list-style-type:none;
         border-radius:0px 0px 10px 10px;
+        border:1px solid black;
     }
 
 .hover-dropdown li
@@ -165,6 +166,7 @@ body
         background-color:#ccffcc;
         padding:8px 20px 5px 20px;
         border-radius:0px 10px 10px 0px;
+        border:1px solid black;
     }
 
 #listbox
