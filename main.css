@@ -68,6 +68,7 @@ body
         margin-top:auto;
         margin-bottom:auto;
         height:96px;
+        min-width:1015px;
     }
 
 .navul
