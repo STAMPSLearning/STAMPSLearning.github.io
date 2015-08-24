@@ -426,6 +426,7 @@ a.r:hover
 #announcements
     {
         background-color:#78BA5D;
+        border:1px solid black;
     }
 
 .rss-box
