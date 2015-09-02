@@ -113,7 +113,7 @@ body
         position:absolute;
         display:none;
         background-color:#fff;
-        width:240px;
+        width:180px;
         top:10px;
         padding:0px 15px 10px 15px;
         list-style-type:none;
@@ -142,7 +142,7 @@ body
         font-size:14px;
         font-weight:300;
         height:28px;
-        width:236px;
+        width:176px;
     }
 
 .s:hover
@@ -153,7 +153,7 @@ body
 #dropdown-container
     {
         height:10px;
-        width:240px;
+        width:180px;
         top:50px;
         position:absolute;
         
@@ -173,7 +173,7 @@ body
 #listbox
     {
         width:99999999px;
-        min-width:248px;
+        min-width:188px;
     }
 
 #dropdown-list
@@ -204,12 +204,12 @@ body
 
 #roboticslink
     {
-        padding-right:116px;
+        padding-right:56px;
     }
 
 #robotlinkbox
     {
-        width:253px;
+        width:193px;
         height:40px;
         position:fixed;
         z-index:1;
