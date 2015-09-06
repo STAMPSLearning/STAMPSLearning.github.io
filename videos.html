@@ -8,7 +8,7 @@
             <table id="nav">
                 <tr>
                     <td id="logo">
-                        <h1 id="title">STAMPS</h1>
+                        <img src="Logo/logo2.png" height=80>
                     </td>
                     <td>
                         <ul class="navul hover-dropdown">
@@ -24,7 +24,6 @@
                             </li>
                             <li><a class='a' href="aboutus.html">About Us</a></li>
                             <li><a class='a' href="contact.html">Contact</a></li>
-                            <li><a class='a' target="_blank" href="http://stampslearning.blogspot.com">Blog</a></li>
                             <li><a class='a' href="forum.html">Forum</a></li>
                             <li><a class='a' href="store.html">Store</a></li>
                         </ul>
@@ -34,11 +33,50 @@
         </div>
         <div id="titleimage" class="smallheader">
             <div id="titlemain" class="smallheader esh">
-                <h2>Currently Unavailable</h2>
+                <h2>Robotics Videos</h2>
             </div>
         </div>
         <div id="main">
             <div id="content">
+                
+                <table id="videoPicker" style="margin-top:100px;">
+<tr><td id="videoListContainer"><table border="1" style="border-collapse:collapse;" id="videoList">
+<tr><td id="c1" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S1L1: Beams and Axles</td></tr>
+<tr><td id="c2" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S1L2: Pegs</td></tr>
+</table></td><td id="video"><iframe id="videoFrame" width="560" height="315" src="https://www.youtube.com/embed/oo6fB_qKhQk" frameborder="0" allowfullscreen></iframe></td></tr>
+</table>
+
+<script type="text/javascript">
+    var selected="c1";
+    var videos={"c1":"https://www.youtube.com/embed/oo6fB_qKhQk","c2":"https://www.youtube.com/embed/GQINnkBo5jM"};
+    function select(n){
+        /*alert("You selected " + n +"!");*/
+        selected=n;
+        for(x=1;x<=2;x++){
+            document.getElementById("c" + x).style.backgroundColor="#ffffff";
+            document.getElementById("c" + x).style.color="#8e8e8e";
+        }
+        document.getElementById(n).style.backgroundColor="#c3c3ba";
+        document.getElementById(n).style.color="#000000";
+        document.getElementById("videoFrame").src=videos[n];
+    }
+
+    function hover(n) {
+        if (selected != n){ 
+            document.getElementById(n).style.backgroundColor="#f5f5dc";
+            document.getElementById(n).style.color="#333333";
+        }
+    }
+
+    function unhover(n) {
+        if (selected != n) {
+            document.getElementById(n).style.backgroundColor="#ffffff";
+            document.getElementById(n).style.color="#8e8e8e";
+        }
+    }
+
+</script>
+                
             </div>
         </div>
         <script src="dropdown.js"></script>

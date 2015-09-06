@@ -466,3 +466,23 @@ span.rss-date
         padding-bottom:20px;
         color:#8E8E8E;
     }
+
+#videoPicker td
+    {
+        vertical-align:top;
+        padding-top:15px;
+        padding-bottom:15px;
+        text-align:center;
+        width:200px;
+    }
+
+#c1 
+    {
+        background-color:#c3c3ba;
+        color:black;
+    }
+
+#c1:hover
+    {
+        background-color:#f5f5dc;
+    }
