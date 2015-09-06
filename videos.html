@@ -42,17 +42,31 @@
                 <table id="videoPicker" style="margin-top:100px;">
 <tr><td id="videoListContainer"><table border="1" style="border-collapse:collapse;" id="videoList">
 <tr><td id="c1" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S1L1: Beams and Axles</td></tr>
-<tr><td id="c2" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S1L2: Pegs</td></tr>
-</table></td><td id="video"><iframe id="videoFrame" width="560" height="315" src="https://www.youtube.com/embed/oo6fB_qKhQk" frameborder="0" allowfullscreen></iframe></td></tr>
+<tr><td id="c2" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S1L3: Direction Changing Pieces</td></tr>
+<tr><td id="c3" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S2L2: EV3 Basic Functions</td></tr>
+<tr><td id="c4" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S3L1: Layout of Electronics</td></tr>
+<tr><td id="c5" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S4L1: Wheels</td></tr>
+<tr><td id="c6" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S5L1: Motion Transformation (Gears)</td></tr>
+<tr><td id="c7" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S6L1: Attachment to Motors</td></tr>
+</table></td><td id="video"><iframe id="videoFrame" width="560" height="315" src="https://www.youtube.com/embed/qi62OKrvaWc" frameborder="0" allowfullscreen></iframe></td></tr>
 </table>
 
 <script type="text/javascript">
     var selected="c1";
-    var videos={"c1":"https://www.youtube.com/embed/oo6fB_qKhQk","c2":"https://www.youtube.com/embed/GQINnkBo5jM"};
+    var videos=
+{
+"c1":"https://www.youtube.com/embed/qi62OKrvaWc",
+"c2":"https://www.youtube.com/embed/CP21MKHh_k8",
+"c3":"https://www.youtube.com/embed/cMG2LHQzerA",
+"c4":"https://www.youtube.com/embed/dwnPlRAt4rA",
+"c5":"https://www.youtube.com/embed/jqA-TZX1BQ0",
+"c6":"https://www.youtube.com/embed/7nTkU7ccKbY",
+"c7":"https://www.youtube.com/embed/qWHlsD4Bu5o"
+};
     function select(n){
         /*alert("You selected " + n +"!");*/
         selected=n;
-        for(x=1;x<=2;x++){
+        for(x=1;x<=7;x++){
             document.getElementById("c" + x).style.backgroundColor="#ffffff";
             document.getElementById("c" + x).style.color="#8e8e8e";
         }

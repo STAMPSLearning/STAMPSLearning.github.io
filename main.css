@@ -472,8 +472,9 @@ span.rss-date
         vertical-align:top;
         padding-top:15px;
         padding-bottom:15px;
-        text-align:center;
-        width:200px;
+        padding-left:10px;
+        /*text-align:center;*/
+        width:250px;
     }
 
 #c1 
