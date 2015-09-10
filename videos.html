@@ -13,11 +13,11 @@
                     <td>
                         <ul class="navul hover-dropdown">
                             <li><a class='a' href="index.html">Home</a></li>
-                            <li><a class='a' href="lessons.html">Lessons</a><div id='dropdown-container' class='hover-dropdown'>
+                             <li><a class='a' href="lessons.html">Lessons</a><div id='dropdown-container' class='hover-dropdown'>
                                 <div class="dropdown-menu"><table id='tside'><tr><td id='listbox'><ul id='dropdown-list'>
-                                    <div id='robotlinkbox'></div><li><a class='s' id='roboticslink' href="robotics.html">Robotics Lessons</a></li><br>
-                                    <li><a class='s' href="science.html">Science Lessons</a></li><br>
-                                    <li><a class='s' href="math.html">Math Problem Solving Lessons</a></li></ul></td><td id='sideopen'> <a class='s ss' href='videos.html'>  
+                                    <div id='robotlinkbox'></div><li><a class='s' id='roboticslink' href="robotics.html">Robotics &nbsp;&nbsp;</a></li><br>
+                                    <li><a class='s' href="science.html">Science&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><br>
+                                    <li><a class='s' href="math.html">Math Problem Solving</a></li></ul></td><td id='sideopen'> <a class='s ss' href='videos.html'>  
                                 <ul id='sideopenmenu' onmouseout="hideSideMenu();">
                                     <li>Robotics Videos</li>
                                     </ul></a></td></tr></table></div></div>
@@ -40,6 +40,7 @@
             <div id="content">
                 
                 <table id="videoPicker" style="margin-top:100px;">
+<tr class='c'><td>Lessons</td><td>Video</td></tr>
 <tr><td id="videoListContainer"><table border="1" style="border-collapse:collapse;" id="videoList">
 <tr><td id="c1" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S1L1: Beams and Axles</td></tr>
 <tr><td id="c2" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S1L3: Direction Changing Pieces</td></tr>
@@ -65,6 +66,8 @@
 };
     function select(n){
         /*alert("You selected " + n +"!");*/
+   
+        
         selected=n;
         for(x=1;x<=7;x++){
             document.getElementById("c" + x).style.backgroundColor="#ffffff";
