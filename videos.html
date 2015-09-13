@@ -2,7 +2,9 @@
     <head>
         <link rel="stylesheet" href="main.css">
         <title>Robotics Videos | STAMPS Learning</title>
-       </head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="toggle.js"></script>
+    </head>
     <body>
         <div id="header-wrap">
             <table id="nav">
@@ -41,15 +43,30 @@
                 
                 <table id="videoPicker" style="margin-top:100px;">
 <tr class='c'><td>Lessons</td><td>Video</td></tr>
-<tr><td id="videoListContainer"><table border="1" style="border-collapse:collapse;" id="videoList">
-<tr><td id="c1" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S1L1: Beams and Axles</td></tr>
-<tr><td id="c2" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S1L3: Direction Changing Pieces</td></tr>
-<tr><td id="c3" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S2L2: EV3 Basic Functions</td></tr>
-<tr><td id="c4" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S3L1: Layout of Electronics</td></tr>
-<tr><td id="c5" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S4L1: Wheels</td></tr>
-<tr><td id="c6" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S5L1: Motion Transformation (Gears)</td></tr>
-<tr><td id="c7" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S6L1: Attachment to Motors</td></tr>
-</table></td><td id="video"><iframe id="videoFrame" width="560" height="315" src="https://www.youtube.com/embed/qi62OKrvaWc" frameborder="0" allowfullscreen></iframe></td></tr>
+<tr><td id="videoListContainer"><div id="scrollbox"><table border="1" style="border-collapse:collapse;" id="videoList">
+<tr><td id="s1" class="seriestab">EV3 Series 1<div id='t1' class="ocaret"></div></td></tr>
+<tr><td id="c1" class="s1" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S1L1: Beams and Axles</td></tr>
+<tr><td id="c2" class="s1" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S1L2: Pegs</td></tr>
+<tr><td id="c3" class="s1" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S1L3: Direction Changing Pieces</td></tr>
+<tr><td id="s2" class="seriestab">EV3 Series 2<div id='t2' class="caret"></div></td></tr>
+<tr><td id="c4" class="s2" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S2L2: EV3 Basic Functions</td></tr>
+<tr><td id="s3" class="seriestab">EV3 Series 3<div id='t3' class="caret"></div></td></tr>
+<tr><td id="c5" class="s3" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S3L1: Layout of Electronics</td></tr>
+<tr><td id="s4" class="seriestab">EV3 Series 4<div id='t4' class="caret"></div></td></tr>
+<tr><td id="c6" class="s4" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S4L1: Wheels</td></tr>
+<tr><td id="c7" class="s4" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S4L2: Sensor Placement</td></tr>
+<tr><td id="s5" class="seriestab">EV3 Series 5<div id='t5' class="caret"></div></td></tr>
+<tr><td id="c8" class="s5" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S5L1: Motion Transformation (Gears)</td></tr>
+<tr><td id="s6" class="seriestab">EV3 Series 6<div id='t6' class="caret"></div></td></tr>
+<tr><td id="c9" class="s6" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">S6L1: Attachment to Motors</td></tr>
+<tr><td id="s7" class="seriestab">FLL Trash Trek Strategy<div id='t7' class="caret"></div></td></tr>
+<tr><td id="c10" class="s7" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">Compost Mission</td></tr>
+<tr><td id="c11" class="s7" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">Scrap Car Mission</td></tr>
+<tr><td id="c12" class="s7" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">Purchasing Decisions and Methane Mission</td></tr>
+<tr><td id="c13" class="s7" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">Cleanup Mission</td></tr>
+<tr><td id="c14" class="s7" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">Demolition and Salvage Mission</td></tr>
+<tr><td id="c15" class="s7" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">Sorter and Career Mission</td></tr>
+    </table></div></td><td id="video"><iframe id="videoFrame" width="560" height="315" src="https://www.youtube.com/embed/qi62OKrvaWc" frameborder="0" allowfullscreen></iframe></td></tr>
 </table>
 
 <script type="text/javascript">
@@ -57,19 +74,27 @@
     var videos=
 {
 "c1":"https://www.youtube.com/embed/qi62OKrvaWc",
-"c2":"https://www.youtube.com/embed/CP21MKHh_k8",
-"c3":"https://www.youtube.com/embed/cMG2LHQzerA",
-"c4":"https://www.youtube.com/embed/dwnPlRAt4rA",
-"c5":"https://www.youtube.com/embed/jqA-TZX1BQ0",
-"c6":"https://www.youtube.com/embed/7nTkU7ccKbY",
-"c7":"https://www.youtube.com/embed/qWHlsD4Bu5o"
+"c2":"https://www.youtube.com/embed/SkQuN7qdv3w",
+"c3":"https://www.youtube.com/embed/CP21MKHh_k8",
+"c4":"https://www.youtube.com/embed/cMG2LHQzerA",
+"c5":"https://www.youtube.com/embed/dwnPlRAt4rA",
+"c6":"https://www.youtube.com/embed/jqA-TZX1BQ0",
+"c7":"https://www.youtube.com/embed/dB0IMHy5ESI",
+"c8":"https://www.youtube.com/embed/7nTkU7ccKbY",
+"c9":"https://www.youtube.com/embed/qWHlsD4Bu5o",
+"c10":"https://www.youtube.com/embed/BVnL9g5oMaQ",
+"c11":"https://www.youtube.com/embed/ERr-ZTjTAQY",
+"c12":"https://www.youtube.com/embed/rcsFDwkFwYU",
+"c13":"https://www.youtube.com/embed/DY_ot_KikSQ",
+"c14":"https://www.youtube.com/embed/xlQuRggmyg0",
+"c15":"https://www.youtube.com/embed/MLuMAEwJajg"
 };
     function select(n){
         /*alert("You selected " + n +"!");*/
    
         
         selected=n;
-        for(x=1;x<=7;x++){
+        for(x=1;x<=15;x++){
             document.getElementById("c" + x).style.backgroundColor="#ffffff";
             document.getElementById("c" + x).style.color="#8e8e8e";
         }

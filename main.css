@@ -477,6 +477,17 @@ span.rss-date
         width:250px;
     }
 
+#scrollbox
+    {
+        height:400px;
+        overflow:auto;
+    }
+
+#scrollbox table
+    {
+        overflow:scroll;
+    }
+
 #c1 
     {
         background-color:#c3c3ba;
@@ -492,4 +503,37 @@ span.rss-date
     {
         text-align:center;
         color:black;
+    }
+
+.seriestab
+    {
+        background-color:#448844;
+        color:#DFDF88;
+        padding:5px;
+    }
+
+div.caret
+    {
+        width: 0; 
+        height: 0; 
+        border-bottom: 5px solid transparent;  /* left arrow slant */
+        border-top: 5px solid transparent; /* right arrow slant */
+        border-left: 5px solid #BDBD66; /* bottom, add background color here */
+        font-size: 0;
+        line-height: 0;
+        margin-left: 10px;
+        display:inline-block;
+    }
+
+div.ocaret
+    {
+        width: 0; 
+        height: 0; 
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #BDBD66;
+        font-size: 0;
+        line-height: 0;
+        margin-left: 10px;
+        display:inline-block;
     }
