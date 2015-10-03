@@ -66,6 +66,9 @@
 <tr><td id="c13" class="s7" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">Cleanup Mission</td></tr>
 <tr><td id="c14" class="s7" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">Demolition and Salvage Mission</td></tr>
 <tr><td id="c15" class="s7" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">Sorter and Career Mission</td></tr>
+<tr><td id="c16" class="s7" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">Transport and Methane Mission</td></tr>
+<tr><td id="c17" class="s7" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">Grouping Missions and Strategy General</td></tr>
+<tr><td id="c18" class="s7" onclick="select(this.id);" onmouseenter="hover(this.id)" onmouseleave="unhover(this.id)">Grouping Missions and Strategy 1</td></tr>
     </table></div></td><td id="video"><iframe id="videoFrame" width="560" height="315" src="https://www.youtube.com/embed/qi62OKrvaWc" frameborder="0" allowfullscreen></iframe></td></tr>
 </table>
 
@@ -87,14 +90,17 @@
 "c12":"https://www.youtube.com/embed/rcsFDwkFwYU",
 "c13":"https://www.youtube.com/embed/DY_ot_KikSQ",
 "c14":"https://www.youtube.com/embed/xlQuRggmyg0",
-"c15":"https://www.youtube.com/embed/MLuMAEwJajg"
+"c15":"https://www.youtube.com/embed/MLuMAEwJajg",
+"c16":"https://www.youtube.com/embed/XcpFtpQ8Ivw",
+"c17":"https://www.youtube.com/embed/3DFYFRXFmxA",
+"c18":"https://www.youtube.com/embed/6-0pDYbDtAo"
 };
     function select(n){
         /*alert("You selected " + n +"!");*/
    
         
         selected=n;
-        for(x=1;x<=15;x++){
+        for(x=1;x<=18;x++){
             document.getElementById("c" + x).style.backgroundColor="#ffffff";
             document.getElementById("c" + x).style.color="#8e8e8e";
         }
