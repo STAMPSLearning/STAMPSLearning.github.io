@@ -281,7 +281,7 @@ g
         background-color:#fff;
     }
 
-#learnmorebutton
+#videosbutton
     {
         height:50px;
         line-height:50px;
@@ -297,7 +297,7 @@ g
         margin-right:auto;
     }
 
-#learnmorebutton:hover
+#videosbutton:hover
     {
         background-color:#55AAFF;
         color:#fff;
