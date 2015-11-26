@@ -537,3 +537,21 @@ div.ocaret
         margin-left: 10px;
         display:inline-block;
     }
+
+#ev3kit
+    {
+        margin-left:auto;
+        margin-right:auto;
+        border-top-right-radius:20px;
+        border-bottom-right-radius: 20px;
+        color:black;
+    }
+
+.iteminfo
+    {
+        padding: 10px 40px 10px 40px;
+        max-width:600px;
+        border-top-right-radius:20px;
+        border-bottom-right-radius: 20px;
+        background-color:#AFF295;
+    }
